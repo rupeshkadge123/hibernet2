@@ -31,7 +31,7 @@ public class Main {
 		Criteria criteria = session.createCriteria(Employee.class);
 		Criterion criterion = Restrictions.eq("departmentId", 101);
 		Criterion criterion4 = Restrictions.eq("employeeName", "amruta");
-//		Criterion criterion2 = Restrictions.gt("salary", 4000);
+		Criterion criterion2 = Restrictions.gt("salary", 4000);
 		Criterion criterion3 = Restrictions.and(criterion,criterion4);
 
 		criteria.add(criterion3);
