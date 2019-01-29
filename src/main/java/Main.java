@@ -32,7 +32,7 @@ public class Main {
 		Criterion criterion = Restrictions.eq("departmentId", 101);
 		Criterion criterion4 = Restrictions.eq("employeeName", "amruta");
 		Criterion criterion2 = Restrictions.gt("salary", 4000);
-		Criterion criterion3 = Restrictions.and(criterion,criterion4);
+		Criterion criterion3 = Restrictions.and(criterion,criterion4,criterion2);
 
 		criteria.add(criterion3);
 		
